@@ -1,0 +1,1203 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Mathis Wauters CV Portfolio Linkedin Website Site Internet FR">
+  <meta name="description" content="Bienvenue sur le CV intéractif de Mathis WAUTERS !">
+  <title>Mathis WAUTERS - CV</title>
+  <meta property="og:title" content="Mathis WAUTERS - CV">
+  <meta property="og:description" content="Bienvenue sur le CV intéractif de Mathis WAUTERS !">
+  <meta property="og:image" content="./assets/images/me.ico">
+  <meta property="og:url" content="https://mathiswauters.fr">
+
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/me.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+        <figure class="avatar-box" onclick="history.go(0);">
+          <img src="./assets/images/me.png" alt="Mathis Wauters" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Mathis Wauters">Mathis Wauters</h1>
+
+          <p class="title">Etudiant Ingénieur Informatique</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Contact</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:wautersmathis@outlook.com">
+                <address>wautersmathis @ outlook.com</address>
+              </a>
+
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Téléphone</p>
+
+              <a href="tel:+033615604908" class="contact-link">06 15 60 49 08</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Age</p>
+              <span class="contact-link" id="age"></span>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Localisation</p>
+              <address>Le Taillan Médoc, Gironde, FRANCE</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/mathiswauters/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/DrPicode" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://soundcloud.com/mathis-wauters" class="social-link">
+              <ion-icon name="logo-soundcloud"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>A Propos</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Parcours</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <a href="./assets/images/CV_Mathis_Wauters_FR.pdf" class="navbar-link" target="_blank">Mon CV</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="http://en.mathiswauters.fr" class="navbar-link">EN</a>
+          </li>
+        </ul>
+
+      </nav>
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="a propos">
+
+        <header>
+          <h2 class="h2 article-title">A propos</h2>
+        </header>
+
+        <div class="about-text">
+          <p>
+            Bonjour, je m'appelle <b>Mathis</b>, j'ai <b id="age1"></b> et j'étudie à <b>CESI Ecole d'Ingénieur</b> à
+            Bordeaux en <b>informatique</b>.
+            Je suis passionné par l'<b>informatique</b> et l'<b>high tech</b>. Je m'intéresse également beaucoup aux
+            nouvelles technologies, à l'aviation et aux créations numériques telles que la <b>photographie</b>, la
+            <b>vidéo</b> et la <b>musique</b>.
+          </p>
+
+          <p>
+            Je suis <b>ouvert d'esprit</b>, <b>dynamique</b> et <b>créatif</b>. Etant <b>curieux</b>, j'aime découvrir
+            de nouveaux sujets et activités diverses.
+            J'espère qu'à travers ce site, vous pourrez découvrir ma personnalité, en parcourant mes projets, mes
+            créations et mes expériences numériques.
+          </p>
+        </div>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">Parcourez mes...</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item" data-nav-link="parcours">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/001-cv.png" alt="cv icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Expériences Professionnelles</h4>
+
+                <p class="service-item-text">
+                  Consultez mon CV, les compétences aquises et les missions que j'ai accompli.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item" data-nav-link="portfolio">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/experience.png" alt="experience icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Expériences Personnelles</h4>
+
+                <p class="service-item-text">
+                  Découvrez mes passions, mes centres d'intérêt et les projets sur lesquels j'ai travaillé.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item" data-nav-link="parcours">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/002-diplm.png" alt="certification icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Formations / Diplômes</h4>
+
+                <p class="service-item-text">
+                  Retracez mon parcours et mes diplômes depuis le collège jusqu'à aujourd'hui.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item" data-nav-link="portfolio">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/003-contenu-digital.png" alt="folder icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Productions Digitales</h4>
+
+                <p class="service-item-text">
+                  Admirez mes photos, mes différents projets et mes productions musicales.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Avis Collaborateurs</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/L_SAGE_Bright_Green.png" alt="Sage" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Karine B.</h4>
+                <time class="testimonials-text" datetime="2023-04-14"><b>14 Avril 2023</b></time>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Nous avons été très satisfaits du travail de Mathis. Il a validé tous les objectifs du stage, et
+                    dans les temps ! Il est même allé au-delà de ce qui lui a été demandé.
+                    Il s'est parfaitement intégré dans l'entreprise et son comportement a été exemplaire.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/SUEZ_logo.png" alt="SUEZ" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Didier J.</h4>
+                <time class="testimonials-text" datetime="2022-07-15"><b>15 Juillet 2022</b></time>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Au sein de SUEZ, Mathis a acquis des compétences en matière de gestion de projet.
+                    Il a rempli sa mission avec force de proposition, méthodologie et implication et a été
+                    particulièrement reconnu par l'ensemble de l'équipe et des supérieurs pour sa disponibilité et son
+                    professionnalisme.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/CESI1.png" alt="CESI" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Zeineb E.</h4>
+                <time class="testimonials-text" datetime="2022-06-28"><b>28 Juin 2022</b></time>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Mathis a fait preuve des capacités nécessaires qu’on attend d’un futur
+                    ingénieur en informatique. Il s’est démarqué, non seulement par ses compétences techniques, mais
+                    aussi
+                    par ses qualités comportementales : un esprit critique, une communication claire et concise, en
+                    rédaction
+                    et en présentation, ainsi qu’une détermination exceptionnelle à atteindre ses objectifs et à
+                    perfectionner
+                    tout ce qu’il fait.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/ATERM.png" alt="A.T.E.R.M" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Stephane B.</h4>
+                <time class="testimonials-text" datetime="2017-12-08"><b>08 Décembre 2017</b></time>
+
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Malgré le fait qu'il s'agissait de son premier stage, Mathis a pu s'intégrer très facilement dans
+                    l'entreprise. Il a fait preuve d'une grande capacité à comprendre ce qu'on lui demandait. Cette
+                    force lui a permis de progresser de manière autonome dans les missions qu'il a accompli.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/L_SAGE_Bright_Green.png" alt="Sage" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Modal</h4>
+
+              <div data-modal-text>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat tenetur tempora natus, itaque autem
+                  rerum, incidunt similique odio maiores praesentium voluptatem pariatur est obcaecati architecto,
+                  commodi labore eveniet modi qui!
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+      </article>
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="parcours">
+
+        <header>
+          <h2 class="h2 article-title">Mon parcours</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Formations</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Diplôme Ingénieur CTI</h4>
+
+              <span>2020 — 2025 | CESI Ecole d'Ingénieur</span>
+
+              <p class="timeline-text">
+                L'école d'ingénieurs CESI est basée sur la pédagogie "apprentissage par problèmes". Je suis actuellement
+                en spécialité informatique et je prépare le diplôme d'ingénieur en informatique agréé CTI.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Baccalauréat Scientifique</h4>
+
+              <span>2017 — 2020 | Lycée Sud Médoc</span>
+
+              <p class="timeline-text">
+                Lorsque j'étais au lycée, j'ai préparé mon baccalauréat scientifique, option Sciences de l'Ingénieur et
+                Informatique. Je l'ai obtenu avec mention bien.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Certification Fondamentaux du Marketing Numérique</h4>
+
+              <span>Juin 2022 | Google</span>
+
+              <p class="timeline-text">
+                Pendant mon temps libre, j'ai suivi une certification Google sur le marketing digital. Après une
+                formation de 40 heures en autonomie, j'ai obtenu la certification identifiée par : TNA 9DU 5NH
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Brevet d'initation aéronautique</h4>
+
+              <span>2019 — 2020 | Aérodrome Lesparre Médoc</span>
+
+              <p class="timeline-text">
+                Passionné d'aviation, j'ai passé mon brevet d'initiation aéronautique. Après avoir appris la théorie,
+                j'ai eu la chance de voler 2 fois sur Robin DR-400.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Expériences</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Stagiaire Ingénieur Logiciel</h4>
+
+              <span>Septembre 2023 — Fevrier 2024 | SAGE ES</span>
+
+              <p class="timeline-text">
+                - Développement de steps definitions avec Cucumber,
+              </p>
+              <p class="timeline-text">
+                - Développement et maintenance de pipelines CI,
+              </p>
+              <p class="timeline-text">
+                - Rédaction et mise à jour des documentations.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Stagiaire Ingénieur développeur BI</h4>
+
+              <span>Janvier 2023 — Avril 2023 | SAGE FR</span>
+
+              <p class="timeline-text">
+                - Mise en place d'outils de suivi des activités et des produits de R&D,
+              </p>
+              <p class="timeline-text">
+                - Création de KPIs via l'API Jira,
+              </p>
+              <p class="timeline-text">
+                - Développement de scripts PowerShell et automatisation des jobs avec Jenkins.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Stagiaire Ingénieur BI</h4>
+
+              <span>Avril 2022 — Juillet 2022 | SUEZ</span>
+
+              <p class="timeline-text">
+                - Consolidation et réorganisation de DATA,
+              </p>
+              <p class="timeline-text">
+                - Création de tableaux de bord Power BI automatisés pour suivre l'amélioration continue,
+              </p>
+              <p class="timeline-text">
+                - Mise en place d'une formation Power BI pour l'équipe Excellence Opérationelle.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Responsable Accueil</h4>
+
+              <span>Mars 2021 — Août 2022 | Carrefour</span>
+
+              <p class="timeline-text">
+                - Responsable du pôle accueil client et location,
+              </p>
+              <p class="timeline-text">
+                - Responsable du rayon boulangerie et pâtisseries,
+              </p>
+              <p class="timeline-text">
+                - Formateur en caisse et en boulangerie,
+              </p>
+              <p class="timeline-text">
+                - Préparation et livraison des commandes drive.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Formateur de sites web WIX</h4>
+
+              <span>Septembre 2018 — Juillet 2020 | ERASMUS +</span>
+
+              <p class="timeline-text">
+                - Formateur pilote pour la création de CV et de sites web sur Wix,
+              </p>
+              <p class="timeline-text">
+                - Sensibilisation au gaspillage alimentaire,
+              </p>
+              <p class="timeline-text">
+                - Voyage linguistique (anglais et espagnol) à Badajoz en Espagne.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Bénévole</h4>
+
+              <span>Novembre 2017 | Croix Rouge Française</span>
+
+              <p class="timeline-text">
+                - Collecte de jouets et vêtements pour enfants,
+              </p>
+              <p class="timeline-text">
+                - Distribution de galettes des rois en supermarché,
+              </p>
+              <p class="timeline-text">
+                - Organisation d'un spectacle caritatif.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Stagiaire modélisation 3D</h4>
+
+              <span>Décembre 2016 | A.T.E.R.M</span>
+
+              <p class="timeline-text">
+                - Modélisation d'éléments pour Rafale (Avion de chasse) sur Catia V5,
+              </p>
+              <p class="timeline-text">
+                - Création et étude de cahiers des charges,
+              </p>
+              <p class="timeline-text">
+                - Premier stage en entreprise.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">Compétences</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Anglais</h5>
+                <data value="790">790 / 990 (B2)</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 79%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Espagnol</h5>
+                <data value="50">50% (A2)</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Web Front</h5>
+                <data value="60">60%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 60%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Web Back</h5>
+                <data value="50">50%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Développement logiciel</h5>
+                <data value="40">40%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 40%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Réseau (CCNA 1)</h5>
+                <data value="30">30%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 30%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+      </article>
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>Tout</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Developpement</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Musique</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Vidéo</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Photographie</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <div class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Selectionnez une catégorie</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </div>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>Tout</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Developpement</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Musique</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Vidéo</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Photographie</button>
+              </li>
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="musique">
+              <a href="https://linktr.ee/dj_mowsic" target="_blank">
+
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/mood.png" alt="DJ" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">DJ | Producteur</h3>
+
+                <p class="project-category">Musique</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="musique">
+              <a href="https://rtm33.fr/emissions/saturday-drive-23" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/radio.png" alt="Radio" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Présentateur Radio RTM</h3>
+
+                <p class="project-category">Musique</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="photographie">
+              <a href="https://www.instagram.com/m_photograph_w/" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/photo.png" alt="photo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Photographe Urbain</h3>
+
+                <p class="project-category">Photographie</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="developpement">
+              <a href="https://github.com/DrPicode" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/github.png" alt="github" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Projets Github</h3>
+
+                <p class="project-category">Developpement</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="developpement">
+              <a href="https://github.com/DrPicode/Nternship" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/Nternship.png" alt="github" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Nternship</h3>
+
+                <p class="project-category">Developpement</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="developpement">
+              <a href="https://cv.mathiswauters.fr" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/RainbowCV.png" alt="github" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Rainbow CV</h3>
+
+                <p class="project-category">Developpement</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="developpement">
+              <a href="https://github.com/DrPicode/EasySave" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/EasySave.png" alt="github" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">EasySave</h3>
+
+                <p class="project-category">Developpement</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="developpement">
+              <a href="https://github.com/DrPicode/Inventory-Manager" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/Inventory.png" alt="github" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Inventory Manager</h3>
+
+                <p class="project-category">Developpement</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="vidéo">
+              <a href="https://youtu.be/yOeJYwjd8cg" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/blink.png" alt="blink" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">CV Animé</h3>
+
+                <p class="project-category">Vidéo</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+        <header>
+          <br>
+          <h2 class="h3 article-title">Expériences Personnelles</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="project-list">
+
+            <li class="project-item  active">
+
+              <figure class="project-img">
+                <img src="./assets/images/Folkestone.png" alt="Trip" loading="lazy">
+              </figure>
+
+              <h3 class="project-title">Voyage linguistique Angleterre</h3>
+              <p class="project-category">Folkestone (GB)</p>
+            </li>
+
+            <li class="project-item  active">
+              <a href="https://airfrancevirtuel.com/" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/AFR.png" alt="Ivao" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Pilote Air France Virtuel</h3>
+                <p class="project-category">Aviation</p>
+              </a>
+            </li>
+
+            <li class="project-item  active">
+              <a href="https://www.ivao.aero/" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/IVAO.png" alt="Ivao" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Controleur aérien virtuel IVAO</h3>
+                <p class="project-category">Aviation</p>
+              </a>
+            </li>
+
+            <li class="project-item  active">
+              <figure class="project-img">
+                <img src="./assets/images/Robin.png" alt="Robin" loading="lazy">
+              </figure>
+
+              <h3 class="project-title">Vol Robin DR-400</h3>
+              <p class="project-category">Aviation</p>
+            </li>
+
+            <li class="project-item  active">
+              <a href="https://www.cesi.fr/" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/CESI.png" alt="CESI" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Ambassadeur CESI</h3>
+                <p class="project-category">CESI</p>
+              </a>
+            </li>
+
+            <li class="project-item  active">
+              <a href="https://www.girondins.com/" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/FCGB.png" alt="FCGB" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Supporter Ultramarine</h3>
+                <p class="project-category">Girondins de Bordeaux</p>
+              </a>
+            </li>
+          </ul>
+
+        </section>
+
+        <section class="skill">
+          <br>
+          <h3 class="h3 article-title">Centres d'interet</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Informatique</h5>
+                <data value="100">100%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 100%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Musique</h5>
+                <data value="95">95%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 95%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Aviation</h5>
+                <data value="75">75%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 75%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Football</h5>
+                <data value="75">75%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 75%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Tennis</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Photographie</h5>
+                <data value="65">65%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 65%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+  <script defer src="/_vercel/insights/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
