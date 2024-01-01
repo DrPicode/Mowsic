@@ -151,7 +151,6 @@
     var birthday = new Date("2002-10-07");
     var age = calculateAge(birthday);
     document.getElementById("age").textContent = age + " ans";
-    document.getElementById("age1").textContent = age + " ans";
   }
 
   updateAge();
